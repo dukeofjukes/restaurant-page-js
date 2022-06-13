@@ -1,0 +1,19 @@
+@import "../node_modules/nord/src/sass/nord.scss";
+
+body {
+  background-color: $nord0;
+  color: $nord4;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .card {
+    margin: 10px;
+    width: 600px;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: $nord2;
+  }
+}
