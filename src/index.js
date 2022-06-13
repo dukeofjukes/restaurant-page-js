@@ -1,6 +1,12 @@
 import "./style.scss";
-import load from "./pageLoad";
+import { loadHome, loadMenu, loadContact } from "./pageLoad";
 
-document.addEventListener("DOMContentLoaded", () => {
-  load();
-});
+document.addEventListener("DOMContentLoaded", () => loadHome());
+
+document.querySelector("#home-btn").addEventListener("click", () => loadHome());
+
+document.querySelector("#menu-btn").addEventListener("click", () => loadMenu());
+
+document
+  .querySelector("#contact-btn")
+  .addEventListener("click", () => loadContact());
